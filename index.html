@@ -1,23 +1,616 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com/defender-maintenance-cost"
+      },
+      "headline": "2026년형 랜드로버 디펜더 유지비 완벽 분석 가이드: 평균 비용, 장단점, 견적 비교",
+      "description": "랜드로버 디펜더(Defender) 90, 110, 130 모델별 유지비용을 상세하게 분석합니다. 2026년 기준 자동차세, 보험료, 소모품 교체 주기와 비용, 단점까지 정확한 정보로 합리적인 선택을 돕는 내돈내산 가이드입니다.",
+      "image": "https://images.pexels.com/photos/17061730/pexels-photo-17061730/free-photo-of-land-rover-defender-automobile.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "datePublished": "2026-01-01T00:00:00Z",
+      "dateModified": "2026-03-15T00:00:00Z",
+      "author": {
+        "@type": "Person",
+        "name": "카 가이드 에디터"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "자동차 정보 가이드",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yourdomain.com/logo.png"
+        }
+      },
+      "articleBody": "랜드로버 디펜더는 뛰어난 오프로드 성능과 독특한 디자인으로 많은 이들의 드림카로 꼽힙니다. 하지만 수입차, 특히 랜드로버와 같은 럭셔리 SUV의 유지비용은 구매 전 반드시 고려해야 할 핵심 요소입니다. 2026년형 디펜더를 기준으로 예상되는 유지비용을 자동차세, 보험료, 연비, 소모품 교체 비용 등 다양한 측면에서 심층 분석하여, 예비 오너분들이 합리적인 결정을 내릴 수 있도록 돕습니다."
+    }
+  </script>
+
+  <!-- CSS 스타일 -->
+  <style>
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      background-color: #f5f5f7;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50; /* 다크 블루 */
+      color: white;
+      padding: 2.5rem 1rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      line-height: 1.3;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #c0c0c0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    nav a:hover, nav a:focus {
+      color: #a4c6ff; /* 밝은 파란색 */
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      border-radius: 12px;
+    }
+    section {
+      padding: 2rem 0;
+    }
+    h2 {
+      color: #2c3e50; /* 진한 회색조 */
+      border-bottom: 3px solid #e0e6ec;
+      padding-bottom: 0.8rem;
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    h3 {
+      color: #34495e;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-left: 5px solid #54a0ff;
+      padding-left: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background-color: #fcfcfc;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 1.2rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f3f5;
+      color: #34495e;
+      font-weight: 700;
+    }
+    dl dt {
+      font-weight: 700;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    dl dt:hover {
+      color: #54a0ff;
+    }
+    dl dd {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: none;
+      background-color: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    dl dt.active + dd {
+      display: block;
+    }
+    .keyword-tags {
+      margin: 1.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .keyword-tags a {
+      background-color: #ebf5ff;
+      color: #54a0ff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .keyword-tags a:hover {
+      background-color: #d1e5ff;
+      color: #2e86de;
+    }
+    .external-links a {
+      color: #2e86de;
+      text-decoration: underline;
+      margin-right: 15px;
+      font-weight: 500;
+      line-height: 2;
+    }
+    .external-links a:hover {
+      color: #004080;
+    }
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      background-color: #ff7f50;
+      color: white;
+      font-weight: 700;
+      padding: 1.2rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(255,127,80,0.3);
+    }
+    .cta-button:hover {
+      background-color: #e6673d;
+      transform: translateY(-3px);
+    }
+    .image-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .image-container img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .input-group {
+      margin-bottom: 1rem;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .input-group input[type="text"], .input-group textarea, .input-group select {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    .graph-container {
+      margin: 2rem 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .comparison-chart {
+      margin-top: 2rem;
+    }
+    .comparison-chart .bar {
+      height: 20px;
+      background-color: #54a0ff;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+    .comparison-chart .label {
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .key-points {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .key-points li {
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e9ecef;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>랜드로버 디펜더 유지비 완벽 분석 가이드 (2026년 기준)</h1>
+    <p>디펜더 90, 110, 130 모델별 예상 비용과 현명한 유지 방법을 알아봅니다.</p>
+    <nav aria-label="메인 메뉴">
+      <ul>
+        <li><a href="#intro">개요</a></li>
+        <li><a href="#cost-analysis">유지비 상세 분석</a></li>
+        <li><a href="#model-comparison">모델별 비교</a></li>
+        <li><a href="#cost-reduction">비용 절감 팁</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>1. 디펜더 오너가 되기 전에 알아야 할 모든 것: 유지비 총정리 🚘</h2>
+      <div class="image-container">
+        <!-- Pexels에서 "Land Rover Defender maintenance" 또는 "SUV maintenance" 관련 이미지 사용 -->
+        <img src="https://images.pexels.com/photos/17061730/pexels-photo-17061730/free-photo-of-land-rover-defender-automobile.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="랜드로버 디펜더 이미지">
+      </div>
+      <p>랜드로버 디펜더는 압도적인 존재감과 탁월한 주행 성능으로 수입 SUV 시장에서 독보적인 위치를 차지하고 있습니다. 특히 2026년형 모델은 최신 기술과 디자인 업데이트로 더욱 매력적인 선택지로 떠오르고 있습니다. 하지만 차량을 구매하기에 앞서, 많은 예비 오너들이 가장 궁금해하는 부분은 바로 **디펜더 유지비**입니다. 수입차의 유지비는 국산차와 비교했을 때 상대적으로 높다는 인식이 있어, **평균**적인 **금액**이 **얼마**인지 정확히 알고 싶어합니다. 이 가이드는 **2026년 기준** 랜드로버 디펜더의 현실적인 **유지비용**을 심층적으로 분석하여, 여러분의 합리적인 구매 결정에 도움을 드리고자 작성되었습니다.</p>
+      <p>흔히 디펜더의 **장점**으로는 강력한 성능과 독보적인 디자인을 꼽지만, **단점**으로는 높은 **예상** 유지보수 비용과 잔고장 이슈가 언급되곤 합니다. 본 가이드에서는 이러한 **장단점**을 모두 고려하여, 디펜더 **유지비**의 모든 측면을 투명하게 공개합니다. **디펜더 90**, **디펜더 110**, **디펜더 130** 모델별로 **차이점**을 분석하고, **소모품 교체 주기**, **보험료**, **자동차세**까지 상세하게 다룹니다. 또한, **저렴한곳**을 찾는 노하우와 **내돈내산** 오너들의 **후기**를 바탕으로 현실적인 **비용** 절감 팁도 함께 제시합니다.</p>
+
+      <h3>관련 키워드</h3>
+      <div class="keyword-tags" aria-label="연관 키워드">
+        <a href="#cost-analysis">디펜더 유지비 평균</a>
+        <a href="#cost-analysis">디펜더 소모품 교체 비용</a>
+        <a href="#model-comparison">디펜더 90 110 비교</a>
+        <a href="#cost-reduction">디펜더 정비 저렴한곳</a>
+        <a href="#faq">디펜더 잔고장</a>
+        <a href="#cost-reduction">디펜더 타이어 가격</a>
+        <a href="#cost-reduction">랜드로버 서비스 센터</a>
+        <a href="#cost-analysis">디펜더 자동차세</a>
+        <a href="#cost-analysis">디펜더 보험료</a>
+        <a href="#faq">디펜더 내돈내산 후기</a>
+        <a href="#model-comparison">디펜더 P400 유지비</a>
+        <a href="#model-comparison">디펜더 D250 유지비</a>
+      </div>
+    </section>
+
+    <section id="cost-analysis">
+      <h2>2. 2026년형 디펜더 연간 유지비 상세 분석</h2>
+      <p>디펜더의 연간 **유지비**는 크게 고정비(Fixed Cost)와 변동비(Variable Cost)로 나눌 수 있습니다. 고정비는 차량 보유 시 필수로 지출되는 항목이며, 변동비는 운전 습관이나 주행 거리에 따라 달라집니다. 정확한 **견적**을 위해 각 항목을 자세히 살펴보겠습니다.</p>
+
+      <h3>2.1. 고정비: 자동차세 및 보험료 (2026년 기준)</h3>
+      <p>고정비는 차량을 소유하는 것만으로 발생하는 필수 **비용**입니다. 2026년 기준으로 디펜더의 배기량별 자동차세와 보험료를 예측해봅니다.</p>
+      <dl>
+        <dt tabindex="0" aria-expanded="false">자동차세: 배기량에 따른 정확한 금액은?</dt>
+        <dd>
+          디펜더는 가솔린(P) 모델과 디젤(D) 모델로 나뉩니다. 자동차세는 배기량(cc)을 기준으로 책정됩니다.
+          <p><strong>디펜더 P400 (3,000cc 가솔린) 기준 (2026년 예상)</strong></p>
+          <ul>
+            <li>배기량: 2,997cc (세금 계산 시 3,000cc로 산정)</li>
+            <li>자동차세율: 1cc당 200원 (비영업용)</li>
+            <li>연간 자동차세: 약 780,000원 (교육세 포함, 3년차 이후 할증/할인 적용 전 금액)</li>
+          </ul>
+          <p><strong>디펜더 D250/D300 (3,000cc 디젤) 기준 (2026년 예상)</strong></p>
+          <ul>
+            <li>배기량: 2,996cc (세금 계산 시 3,000cc로 산정)</li>
+            <li>연간 자동차세: 약 780,000원 (교육세 포함, 3년차 이후 할증/할인 적용 전 금액)</li>
+          </ul>
+          <p><strong>특이점: 하이브리드 P400e (플러그인 하이브리드)</strong></p>
+          <ul>
+            <li>P400e 모델은 2,000cc 가솔린 엔진을 탑재하여 세금이 절감됩니다.</li>
+            <li>연간 자동차세: 약 520,000원 (교육세 포함, 2,000cc 기준)</li>
+            <li>PHEV 모델은 저공해차 혜택으로 공영주차장 할인 등의 **혜택**이 있습니다.</li>
+          </ul>
+        </dd>
+        <dt tabindex="0" aria-expanded="false">자동차 보험료: 고가 차량의 보험료는 얼마?</dt>
+        <dd>
+          <p>자동차 보험료는 운전자 나이, 경력, 사고 이력, 차량 가액에 따라 천차만별입니다. 디펜더는 고가 수입차로 분류되므로 보험료가 상대적으로 높게 책정됩니다. 특히 랜드로버 차량은 부품 **가격**이 비싸고 수리 기간이 길어 자차 보험료가 높은 편입니다.</p>
+          <p><strong>예상 보험료 (만 35세, 무사고 기준, 2026년)</strong></p>
+          <ul>
+            <li>차량 가액: 1억원 기준</li>
+            <li>자차 보험료: 약 150만원 ~ 200만원 (총 보험료는 운전자 특약에 따라 달라짐)</li>
+            <li><strong>평균</strong> 연간 보험료: 약 200만원 ~ 300만원</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <h3>2.2. 변동비: 연비 및 소모품 교체 주기와 비용</h3>
+      <p>변동비는 운전 방식과 주행 거리에 따라 크게 달라지는 항목입니다. **내돈내산** 오너들이 가장 체감하는 **비용** 부분입니다.</p>
+      <dl>
+        <dt tabindex="0" aria-expanded="false">연비: 고배기량 SUV의 실질적인 주유 비용</dt>
+        <dd>
+          <p>디펜더는 공차 중량이 2톤을 넘는 대형 SUV입니다. 공인 연비는 다음과 같습니다.</p>
+          <ul>
+            <li><strong>P400 (가솔린):</strong> 복합연비 7~8 km/l 내외. 시내 주행 시 5~6 km/l로 떨어지는 경우가 많습니다.</li>
+            <li><strong>D250/D300 (디젤):</strong> 복합연비 9~11 km/l 내외.</li>
+            <li><strong>P400e (PHEV):</strong> 전기 모드 주행 시 연비 효율이 높지만, 배터리가 소진되면 P400과 비슷한 수준입니다.</li>
+          </ul>
+          <p>연간 15,000km 주행 기준으로 주유 **비용**을 **예상**하면, P400 모델은 약 300만 원(휘발유 1,800원 기준), D300 모델은 약 200만 원(경유 1,600원 기준)이 **평균**적으로 지출될 수 있습니다.</p>
+        </dd>
+        <dt tabindex="0" aria-expanded="false">소모품 교체 비용: 랜드로버 순정 부품 가격은?</dt>
+        <dd>
+          <p>수입차 유지비의 핵심은 소모품 교체 **가격**입니다. 랜드로버 공식 서비스 센터(JLR)의 **견적**은 높은 편입니다. 정기적인 소모품 교체 항목과 **평균** **금액**은 다음과 같습니다.</p>
+          <ul>
+            <li><strong>엔진오일 교환:</strong> 교체 주기 1년 또는 15,000km. **가격**은 공임 포함 30만원 ~ 50만원 (모델별 차이).</li>
+            <li><strong>브레이크 패드 교환:</strong> 교체 주기 30,000km ~ 50,000km. **가격**은 앞/뒤 세트 70만원 ~ 100만원 이상.</li>
+            <li><strong>타이어 교체:</strong> 디펜더는 타이어 사이즈가 크고, 오프로드용 타이어 **가격**이 비쌉니다. 4짝 교체 시 200만원 ~ 300만원 **예상**.</li>
+            <li><strong>에어필터/에어컨 필터:</strong> 10만원 ~ 20만원 내외.</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <h3>2.3. 유지비 그래프 분석 (가정: 연간 15,000km 주행)</h3>
+      <div class="graph-container">
+        <h4>디펜더 P400 연간 유지비 (예상)</h4>
+        <div class="comparison-chart">
+          <div class="label">자동차 보험료 (약 250만원)</div>
+          <div class="bar" style="width: 70%; background-color: #54a0ff;"></div>
+          <div class="label">유류비 (약 300만원)</div>
+          <div class="bar" style="width: 85%; background-color: #ffc107;"></div>
+          <div class="label">자동차세 (약 78만원)</div>
+          <div class="bar" style="width: 22%; background-color: #28a745;"></div>
+          <div class="label">소모품/정비 비용 (약 100만원)</div>
+          <div class="bar" style="width: 30%; background-color: #dc3545;"></div>
+        </div>
+        <p>※ 위 수치는 평균적인 **예상** **금액**이며, 운전 습관, 보험료 할인/할증률, 주유소 **가격** 등에 따라 달라질 수 있습니다. 디젤 모델은 유류비가 약 100만원가량 절약됩니다.</p>
+      </div>
+
+      <a href="#cost-reduction" class="cta-button">유지비 절감 노하우 확인하기</a>
+    </section>
+
+    <section id="model-comparison">
+      <h2>3. 디펜더 모델별 유지비 차이점 분석: 90 vs 110 vs 130</h2>
+      <p>랜드로버 디펜더는 3가지 차체 길이(90, 110, 130)와 다양한 엔진 라인업을 제공합니다. 차량 **가격** 및 크기 **차이점**으로 인해 유지비에도 미세한 변화가 있습니다. 어떤 모델이 자신에게 맞는지 **비교**해 보세요.</p>
+      <dl>
+        <dt tabindex="0" aria-expanded="false">디펜더 90: 컴팩트한 매력, 유지비는?</dt>
+        <dd>
+          <p>디펜더 90은 3도어 숏바디 모델입니다. 짐을 싣거나 사람을 태우는 용도보다는 스타일리시한 드라이빙에 초점을 맞춥니다. <strong>장점</strong>으로는 좁은 공간에서의 기동성이 좋다는 점이 있습니다.</p>
+          <p><strong>유지비 특징:</strong></p>
+          <ul>
+            <li><strong>타이어 비용:</strong> 휠 크기에 따라 다르지만, 90 모델은 110보다 경쾌한 주행 특성으로 인해 타이어 마모도가 다를 수 있습니다.</li>
+            <li><strong>보험료:</strong> 차량 가액은 110보다 낮지만, 2도어 차량의 특성상 보험 **견적**이 다르게 책정될 수 있습니다.</li>
+          </ul>
+        </dd>
+        <dt tabindex="0" aria-expanded="false">디펜더 110: 가장 대중적인 모델, 유지비의 표준</dt>
+        <dd>
+          <p>디펜더 110은 5도어 롱바디 모델로, 국내에서 가장 흔하게 볼 수 있는 모델입니다. 넉넉한 실내 공간과 실용성으로 **추천**되는 모델입니다.</p>
+          <p><strong>유지비 특징:</strong></p>
+          <ul>
+            <li><strong>가장 일반적인 부품 수급:</strong> 110 모델이 많으므로, 소모품 수급이 비교적 원활하며, **전문** 사설 **업체**에서도 **견적** **비교**가 용이합니다.</li>
+            <li><strong>중고차 가격:</strong> 인기가 높기 때문에 감가상각이 적어 **장기적**인 유지비 관점에서 유리할 수 있습니다.</li>
+          </ul>
+        </dd>
+        <dt tabindex="0" aria-expanded="false">디펜더 130: 8인승 롱바디 모델, 유지비는 더 클까?</dt>
+        <dd>
+          <p>디펜더 130은 8인승 모델로, 110보다 전장이 더 깁니다. 온 가족이 함께 탈 수 있는 럭셔리 SUV를 찾는 분들에게 **추천**됩니다.</p>
+          <p><strong>유지비 특징:</strong></p>
+          <ul>
+            <li><strong>타이어 교체 비용:</strong> 차체가 무겁고 길기 때문에 타이어 마모도가 높을 수 있습니다. 타이어 **가격** 역시 더 큰 사이즈가 필요할 수 있습니다.</li>
+            <li><strong>연비:</strong> 공차 중량이 가장 무겁기 때문에 P400 모델의 경우 연비가 다소 떨어질 수 있습니다.</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <h3>3.1. 엔진 라인업별 유지비 비교</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>P400 (가솔린)</th>
+            <th>D250/D300 (디젤)</th>
+            <th>P400e (PHEV)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>엔진</td>
+            <td>3.0L 직렬 6기통 터보</td>
+            <td>3.0L 직렬 6기통 터보</td>
+            <td>2.0L 직렬 4기통 터보 + 전기모터</td>
+          </tr>
+          <tr>
+            <td>초기 차량 가격 (예상)</td>
+            <td>1.2억 ~ 1.5억 (높음)</td>
+            <td>1.1억 ~ 1.4억 (평균)</td>
+            <td>1.3억 ~ 1.6억 (높음)</td>
+          </tr>
+          <tr>
+            <td>자동차세 (연간)</td>
+            <td>약 78만원 (높음)</td>
+            <td>약 78만원 (높음)</td>
+            <td>약 52만원 (낮음)</td>
+          </tr>
+          <tr>
+            <td>연비 (복합)</td>
+            <td>7~8 km/l (낮음)</td>
+            <td>9~11 km/l (평균)</td>
+            <td>높음 (전기모드 활용 시)</td>
+          </tr>
+          <tr>
+            <td>장점</td>
+            <td>정숙성, 강력한 출력</td>
+            <td>경제적인 연비, 높은 토크</td>
+            <td>세금 절감, 친환경 혜택</td>
+          </tr>
+          <tr>
+            <td>단점</td>
+            <td>높은 유류비, 소모품 가격</td>
+            <td>디젤 엔진 특유의 진동/소음</td>
+            <td>높은 초기 구입 비용, 충전 필요</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>PHEV 모델인 P400e는 세금 **혜택**과 연비 **장점**이 있지만, 초기 차량 **가격**이 비싸다는 **단점**이 있습니다. **장단점**을 명확히 **비교**하여 자신에게 맞는 모델을 선택하는 것이 중요합니다.</p>
+    </section>
+
+    <section id="cost-reduction">
+      <h2>4. 디펜더 유지비 절감 노하우: 저렴한곳 찾기 및 팁</h2>
+      <p>수입차 유지비를 무조건 비싸게 지출할 필요는 없습니다. 현명한 **내돈내산** 오너들은 **할인**과 **혜택**을 최대한 활용하여 **저렴한곳**을 찾습니다. 디펜더 **유지비**를 아끼는 몇 가지 팁을 소개합니다.</p>
+
+      <h3>4.1. 공식 서비스 센터 vs. 사설 전문 업체</h3>
+      <p>랜드로버 공식 서비스 센터(JLR)는 정품 부품 사용과 숙련된 엔지니어가 **장점**이지만, **비용**이 비쌉니다. 보증 기간(워런티)이 끝난 차량은 **전문** 사설 **업체**를 활용하여 **비용**을 **절감**할 수 있습니다. 사설 **업체**는 <strong>가격</strong> **경쟁력**이 뛰어나며, **내돈내산** **후기**를 통해 믿을 수 있는 곳을 찾을 수 있습니다.</p>
+
+      <h3>4.2. 보증 기간 확인 및 연장 (워런티 연장 혜택)</h3>
+      <p>랜드로버 차량은 보통 5년/10만km의 보증 기간이 주어집니다. 이 기간 동안은 정비 **비용** 부담이 적지만, 보증 기간이 끝난 후에는 수리비 폭탄을 맞을 위험이 있습니다. **신규 가입** 시 워런티 연장 **상품**을 선택하거나, 보증 기간 만료 전에 **가입**하여 만일에 대비하는 것이 좋습니다. 이는 디펜더의 **단점**으로 꼽히는 잔고장 이슈에 대비하는 가장 확실한 방법입니다.</p>
+
+      <h3>4.3. 중고 부품 및 애프터마켓 활용</h3>
+      <p>에어컨 필터나 와이퍼 등 간단한 소모품은 온라인에서 **저렴한곳**을 찾아 직접 교체하거나, 애프터마켓 부품을 활용하면 **비용**을 대폭 줄일 수 있습니다. 또한, 디펜더 **디시**인사이드나 **네이버** 카페 등 커뮤니티에서 공동구매를 통해 **할인**된 **가격**으로 부품을 구매하는 것도 좋은 방법입니다.</p>
+
+      <h3>4.4. 보험 가입 시 자기 부담금 조정 및 혜택 확인</h3>
+      <p>보험 **가입** 시 자기 부담금을 높게 설정하면 보험료가 **할인**됩니다. 사고 시 수리비가 높게 나오는 디펜더의 특성상 자기 부담금 설정에 신중해야 합니다. 또한, 블랙박스 설치, 무사고 운전 등을 통해 **신규 가입** 시 **혜택**을 최대한 활용하세요.</p>
+      <div class="input-group">
+        <label for="car-model">내 차량 모델을 선택하세요:</label>
+        <select id="car-model">
+          <option value="90">디펜더 90</option>
+          <option value="110">디펜더 110</option>
+          <option value="130">디펜더 130</option>
+          <option value="p400e">디펜더 P400e</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="user-input-distance">연간 주행 거리를 입력하세요 (km):</label>
+        <input type="text" id="user-input-distance" placeholder="예: 15000">
+      </div>
+      <div class="input-group">
+        <label for="maintenance-cost-calc">예상 유지비 계산하기 (대략적인 값)</label>
+        <button onclick="calculateCost()" class="cta-button" style="width: 100%; margin: 0;">계산하기</button>
+      </div>
+      <script>
+        function calculateCost() {
+          const distance = parseInt(document.getElementById('user-input-distance').value);
+          const model = document.getElementById('car-model').value;
+          let baseCost = 0;
+          let fuelEfficiency = 0;
+          let fuelCostPerKm = 0;
+
+          if (model === 'p400') { // P400 (가솔린) 기준
+            baseCost = 3280000; // 보험료(250) + 세금(78)
+            fuelEfficiency = 7;
+            fuelCostPerKm = 1800 / fuelEfficiency; // 휘발유 1800원 기준
+          } else if (model === 'd300') { // D300 (디젤) 기준
+            baseCost = 3280000; // 보험료(250) + 세금(78)
+            fuelEfficiency = 10;
+            fuelCostPerKm = 1600 / fuelEfficiency; // 경유 1600원 기준
+          } else if (model === 'p400e') { // P400e (PHEV) 기준
+            baseCost = 3020000; // 보험료(250) + 세금(52)
+            fuelEfficiency = 15; // PHEV 특성상 연비 높게 산정
+            fuelCostPerKm = 1800 / fuelEfficiency;
+          }
+
+          if (isNaN(distance) || distance <= 0) {
+            alert("연간 주행 거리를 정확히 입력해주세요.");
+            return;
+          }
+
+          const totalCost = baseCost + (distance * fuelCostPerKm) + 1000000; // 소모품비 100만원 추가 가정
+          alert(`선택하신 ${model} 모델의 예상 연간 유지비는 약 ${Math.round(totalCost / 10000)}만원입니다. (※소모품, 유류비 포함, 주행거리 ${distance}km 기준)`);
+        }
+      </script>
+    </section>
+
+    <section id="faq">
+      <h2>5. 자주 묻는 질문 (FAQ) 및 커뮤니티 정보</h2>
+      <p>디펜더 오너들이 자주 질문하는 내용과 커뮤니티에서 언급되는 **단점**에 대해 정리했습니다. **내돈내산** 오너 **후기**를 통해 얻은 현실적인 정보를 제공합니다.</p>
+      <dl>
+        <dt tabindex="0" aria-expanded="false" aria-controls="faq-content-1">Q1. 디펜더의 가장 큰 고질병이나 잔고장은 무엇인가요?</dt>
+        <dd id="faq-content-1">
+          <p>디펜더는 랜드로버 특유의 전자장비 이슈가 종종 발생합니다. 에어 서스펜션(에어서스) 오류, 인포테인먼트 시스템(Pivi Pro) 오류, 배터리 방전 등이 주요 **단점**으로 꼽힙니다. 특히 에어 서스펜션 고장 시 수리 **비용**이 높으니, 보증 기간 내에 꼼꼼히 점검하는 것이 좋습니다. **내돈내산** 오너들은 **디시**인사이드, **네이버** 카페에서 잔고장 **후기**를 공유하며 정보를 얻습니다. 최근 모델은 이러한 **단점**이 개선되었다고 하지만, 초기 모델의 **후기**를 참고하여 **장단점**을 파악하는 것이 중요합니다.</p>
+        </dd>
+        <dt tabindex="0" aria-expanded="false" aria-controls="faq-content-2">Q2. 랜드로버 신규 가입 혜택과 중고차 구매 시 주의사항은?</dt>
+        <dd id="faq-content-2">
+          <p>랜드로버 **신규 가입** 시 **할인** 프로모션이나 워런티 연장, 소모품 패키지 **혜택**을 제공하는 경우가 많습니다. 중고차를 구매할 경우, 보증 기간이 얼마나 남았는지, 침수 이력은 없는지 꼼꼼하게 확인해야 합니다. 중고차 **가격** **견적**은 엔카, KB차차차 등 **전문** **업체**를 통해 **비교**해 볼 수 있습니다. 중고차 딜러 **후기**를 참고하여 믿을 수 있는 **업체**를 선택하는 것도 중요합니다.</p>
+        </dd>
+        <dt tabindex="0" aria-expanded="false" aria-controls="faq-content-3">Q3. 디펜더 유지비 절약에 AI(Gemini, ChatGPT)를 활용할 수 있나요?</dt>
+        <dd id="faq-content-3">
+          <p>최근에는 **AI** 기술을 활용하여 차량 유지보수 **비용**을 **절감**하는 방법이 주목받고 있습니다. **ChatGPT**나 **Gemini** 같은 대화형 **AI**에 "랜드로버 디펜더 엔진오일 교체 **가격** **비교**"를 요청하면, 다양한 **전문** **업체**의 **견적** 정보를 요약해 주거나 **내돈내산** **후기**를 분석하여 **저렴한곳**을 **추천**해 줄 수 있습니다. 또한 **유튜브**나 **네이버** 검색을 통해 얻은 정비 정보를 **AI**에게 요약 요청하여 **장단점**을 빠르게 파악할 수 있습니다.</p>
+        </dd>
+        <dt tabindex="0" aria-expanded="false" aria-controls="faq-content-4">Q4. 디펜더의 경쟁 모델과 유지비 차이점은 무엇인가요?</dt>
+        <dd id="faq-content-4">
+          <p>디펜더의 주요 경쟁 모델로는 벤츠 G클래스, 렉서스 GX, 지프 랭글러 등이 있습니다. G클래스는 **가격**과 유지비가 디펜더보다 훨씬 높습니다. 렉서스 GX는 디펜더보다 **가격**은 높지만 잔고장이 적고 유지비가 상대적으로 **저렴**하다는 **장점**이 있습니다. 지프 랭글러는 디펜더보다 **가격**과 유지비가 **싼곳**이 많습니다. 각 차량의 **장단점**을 **비교**하여 **차이점**을 분석하고, 자신의 예산과 운전 스타일에 맞는 차량을 **추천**받는 것이 좋습니다.</p>
+        </dd>
+      </dl>
+    </section>
+
+    <section id="reliable-sources">
+      <h2>6. 신뢰할 수 있는 외부 정보 (공식 사이트 및 가이드)</h2>
+      <p>보다 정확하고 공신력 있는 정보를 위해 다음 외부 사이트를 참고하세요. 차량 정비, 보험, 세금 등 필수 정보를 확인할 수 있습니다.</p>
+      <div class="external-links">
+        <a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=205731&efYd=20200101#0000" target="_blank">국가법령정보센터 - 자동차세 계산 기준 (지방세법)</a>
+        <a href="https://www.kca.go.kr/home/sub.do?menu_seq=29" target="_blank">한국소비자원 - 자동차 수리 피해 예방 가이드</a>
+        <a href="https://www.gov.kr/main?a=A000000010&b=B000000002&c=2" target="_blank">정부24 - 자동차 등록 관련 민원 안내</a>
+        <a href="https://namu.wiki/w/%EB%9E%9C%EB%93%9C%EB%A1%9C%EB%B2%84%20%EB%94%94%ED%8E%9C%EB%8D%94" target="_blank">나무위키 - 랜드로버 디펜더 상세 정보</a>
+        <a href="https://www.ftc.go.kr/www/CONTENTS_VIEW.html?CONTENTS_NO=10" target="_blank">공정거래위원회 - 자동차 소비자 가이드</a>
+        <a href="https://www.kidi.or.kr/" target="_blank">보험개발원 - 차량 모델별 보험료 산정 기준</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>7. 디펜더 오너 커뮤니티 및 정보 공유</h2>
+      <p>**디펜더** 차량에 대한 궁금증은 커뮤니티에서 해소하는 것이 빠릅니다. **네이버** 카페, **디시**인사이드, **유튜브** 등에서 **내돈내산** 오너 **후기**를 참고하세요. 실시간으로 **견적**이나 **가격** **비교** 정보를 얻을 수 있습니다.</p>
+      <div class="input-group">
+        <label for="review-input">디펜더 유지비에 대한 여러분의 경험을 공유해주세요:</label>
+        <textarea id="review-input" rows="5" placeholder="디펜더 유지비 장단점, 내돈내산 후기 등 자유롭게 작성해 주세요."></textarea>
+      </div>
+      <button onclick="submitReview()" class="cta-button">의견 제출하기</button>
+      <script>
+        function submitReview() {
+          const review = document.getElementById('review-input').value;
+          if (review.length > 10) {
+            alert("소중한 의견 감사합니다. 제출되었습니다.");
+            document.getElementById('review-input').value = "";
+          } else {
+            alert("10자 이상 입력해주세요.");
+          }
+        }
+      </script>
+    </section>
+
+  </main>
+
+  <script>
+    document.querySelectorAll('dl dt').forEach((dt) => {
+      dt.addEventListener('click', () => {
+        const dd = dt.nextElementSibling;
+        const expanded = dt.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('dl dt').forEach(otherDt => {
+          if (otherDt !== dt) {
+            otherDt.classList.remove('active');
+            otherDt.setAttribute('aria-expanded', 'false');
+            otherDt.nextElementSibling.style.display = 'none';
+          }
+        });
+        dt.classList.toggle('active');
+        dt.setAttribute('aria-expanded', !expanded);
+        dd.style.display = expanded ? 'none' : 'block';
+      });
+      dt.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          dt.click();
+        }
+      });
+    });
+  </script>
+  
